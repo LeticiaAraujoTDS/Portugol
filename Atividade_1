@@ -14,12 +14,12 @@ programa
        
        tempo = ano*dia
 
-       escreva("a)", "Um ano tem ", tempo, " horas.", "\n")
+       escreva("a- ", "Um ano tem ", tempo, " horas.", "\n")
     
        decada = 365*10
        tempo = decada*(dia*60)
 
-       escreva("b)", "Uma década tem ", tempo, " minutos.", "\n")
+       escreva("b- ", "Uma década tem ", tempo, " minutos.", "\n")
 
        idade = 16
        segundos = 60
@@ -27,13 +27,13 @@ programa
        tempo3 = (idade*ano)*dia*60
        resultado1 = tempo3*60
     
-       escreva("c)", "Há ", resultado1, " segundos em 16 anos.", "\n")
+       escreva("c- ", "Há ", resultado1, " segundos em 16 anos.", "\n")
 
-       escreva("d)", "Muitos.", "\n")
+       escreva("d- ", "Muitos.", "\n")
 
        questao = 977000000/365/24/60/60
 
-       escreva("e)", "977 milhões de segundos são ", questao , " anos.")
+       escreva("e- ", "977 milhões de segundos são ", questao , " anos.")
        
 	}
 }
