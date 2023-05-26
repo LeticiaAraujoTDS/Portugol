@@ -1,0 +1,40 @@
+# Portugol
+Repositório para armazenar atividades do Portugol
+
+programa
+{
+	
+	funcao inicio()
+	{
+
+       inteiro ano, dia, tempo, decada, minutos, tempo2, idade, segundos, tempo3, resultado1, questao
+
+       ano = 365
+       dia = 24
+       
+       tempo = ano*dia
+
+       escreva("a)", "Um ano tem ", tempo, " horas.", "\n")
+    
+       decada = 365*10
+       tempo = decada*(dia*60)
+
+       escreva("b)", "Uma década tem ", tempo, " minutos.", "\n")
+
+       idade = 16
+       segundos = 60
+       minutos = 60
+       tempo3 = (idade*ano)*dia*60
+       resultado1 = tempo3*60
+    
+       escreva("c)", "Há ", resultado1, " segundos em 16 anos.", "\n")
+
+       escreva("d)", "Muitos.", "\n")
+
+       questao = 977000000/365/24/60/60
+
+       escreva("e)", "977 milhões de segundos são ", questao , " anos.")
+       
+	}
+}
+
