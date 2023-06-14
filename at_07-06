@@ -1,0 +1,163 @@
+programa
+{
+inclua biblioteca Util
+ --> u
+
+funcao inicio()
+{
+         inteiro sorteio
+         cadeia cara, coroa
+
+         sorteio = u.sorteia(0, 1)
+
+         cara = "cara"
+         coroa = "coroa"
+
+         se(sorteio==0){
+          escreva(cara)
+          }
+         senao{
+          escreva(coroa)
+          }
+
+
+
+
+
+
+
+}
+}
+programa
+{
+
+funcao inicio()
+{
+inteiro mes, dia
+
+escreva("Qual o mês em que você nasceu? Digite em número.", "\n")
+leia(mes)
+escreva("Qual o dia em que você nasceu?", "\n")
+leia(dia)
+
+    se(dia>=21 e mes==3 ou dia<=20 e mes==4){
+escreva("Você é de áries.")
+}
+se(dia>=21 e mes==4 ou dia<=20 e mes==5){
+escreva("Você é de touro.")
+}
+se(dia>=21 e mes==5 ou dia<=20 e mes==6){
+escreva("Você é de gêmeos.")
+}
+se(dia>=21 e mes==6 ou dia<=22 e mes==7){
+escreva("Você é de câncer.")
+}
+se(dia>=23 e mes==7 ou dia<=22 e mes==8){
+escreva("Você é de leão.")
+}
+se(dia>=23 e mes==8 ou dia<=22 e mes==9){
+escreva("Você é de virgem.")
+}
+se(dia>=23 e mes==9 ou dia<=22 e mes==10){
+escreva("Você é de libra.")
+}
+se(dia>=23 e mes==10 ou dia<=21 e mes==11){
+escreva("Você é de escorpião.")
+}
+se(dia>=22 e mes==11 ou dia<=21 e mes==12){
+escreva("Você é de sagitário.")
+}
+se(dia>=22 e mes==12 ou dia<=20 e mes==1){
+escreva("Você é de capricórnio.")
+}
+se(dia>=21 e mes==1 ou dia<19 e mes==2){
+escreva("Você é de aquário.")
+}
+se(dia>=19 e mes==2 ou dia<20 e mes==3){
+escreva("Você é de peixes.")
+}
+
+}
+programa
+{
+
+funcao inicio()
+{
+real altura
+
+escreva("Digite sua altura:", "\n")
+leia(altura)
+
+se(altura>2){
+escreva("Gigante")
+}
+senao se (altura>=1.7){
+  escreva("Alto")
+}
+senao{
+  escreva("Baixo")
+}
+}
+}
+programa
+{
+
+funcao inicio()
+{
+inteiro idade
+
+idade = 67
+
+se(idade>=18){
+escreva("maior de idade \n")
+
+
+se(idade>=60){
+escreva("pode tirar carteira de idoso \n")
+}
+}senao {
+escreva("menor de idade \n")
+
+se(idade<=12){
+escreva("criança")
+}senao{
+escreva("adolescente")
+}
+
+}
+}
+
+programa
+{
+
+funcao inicio()
+{
+
+inteiro opcao
+
+escreva("***********************", "\n")
+escreva("*         MENU        *", "\n")
+escreva("***********************", "\n")
+escreva("***********************", "\n")
+escreva("* 1 - Pão de queijo   *", "\n")
+escreva("* 2 - Pão de calabresa*", "\n")
+escreva("* 3 - Pão de batata   *", "\n")
+escreva("* 4 - Cafézinho       *", "\n")
+escreva("* 5 - Pizza           *", "\n")
+leia(opcao)
+
+
+      escolha(opcao){
+
+caso 1:
+escreva("Você escolheu Pão de Queijo.")
+pare
+
+caso 2:
+escreva("Você escolheu Pão de calabresa.")
+pare
+
+caso contrario:
+escreva("Você não comprou nada.")
+pare
+}
