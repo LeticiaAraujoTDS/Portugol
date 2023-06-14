@@ -3,18 +3,16 @@ programa
 	inclua biblioteca Matematica --> m
 	
 	
-     inteiro opcao
+        inteiro opcao
 	inteiro quantidade
 	real total
 	real total_compra = 0.0
 	
 	funcao inicio()
 	{
-	
-		
 		menu()
 		
-	     opcao = 99
+	        opcao = 99
 
 		enquanto(opcao != 0){
 
@@ -83,7 +81,6 @@ programa
 	funcao calcular_total(real preco)
 	{
 		
-		
 		total = m.arredondar(quantidade * preco, 2)
 	     escreva("total: ", total)
 	     total_compra = total + total_compra
@@ -94,7 +91,7 @@ programa
 	funcao menu() 
 	{
 
-	     escreva("*********************************************\n")
+	        escreva("*********************************************\n")
 		escreva("*           CANTINA TEMPERO CABREIRO        *\n")
 		escreva("*********************************************\n")
 		escreva("* 1 - Pão de Queijo ------------- R$ 5.00   *\n")
