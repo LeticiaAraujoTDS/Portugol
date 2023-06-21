@@ -7,14 +7,13 @@ programa
 	
 	funcao inicio()
 	{
+	
 		escreva("Informe o valor de a : \n")
 		leia(a)
 		escreva("Informe o valor de b : \n")
 		leia(b)
 		escreva("Informe o valor de c : \n")
 		leia(c)
-		calcular_delta()
-		calcular_raiz()
 	}
 
 	
@@ -29,4 +28,21 @@ programa
 		x1 = (-b + (m.raiz(delta, 2.0)))/2*a
 		x2 = (-b - (m.raiz(delta, 2.0)))/2*a
 		}
+
+		funcao menu() 
+	{
+
+	     escreva("*********************************************\n")
+		escreva("*              MENU DAS FUNÇÕES             *\n")
+		escreva("*********************************************\n")
+		escreva("* 1 - Ver o valor de a, b e c ------------- *\n")
+		escreva("* 2 - Ver o valor das raizes -------------- *\n")
+		escreva("* 3 - Ver o valor de delta ---------------- *\n")
+		escreva("* 4 - Ver o valor de x1 ------------------- *\n")
+		escreva("* 5 - Ver o valor de x2 ------------------- *\n")
+		escreva("*********************************************\n")
+	}
+
+}
+
 }
