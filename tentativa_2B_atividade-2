@@ -3,7 +3,8 @@ programa
 	inclua biblioteca Util --> u
 	inclua biblioteca Matematica --> m
 	
-	real a, b, c, x, x1, x2, delta, delta_x
+	real a, b, c, x, x1, x2, delta, delta_x, opcao
+	
 	
 	funcao inicio()
 	{
@@ -16,9 +17,13 @@ programa
 		leia(c)
 		calcular_delta()
 		calcular_raiz()
+		
+
+		
+
+		
 	}
 
-	
 	funcao calcular_delta()
 	{
 		delta = m.potencia(b, 2.0) - 4 * a * c
@@ -26,7 +31,7 @@ programa
 		
 	funcao calcular_raiz()
 	{
-		delta = m.raiz(((b * b) - 4 * a * c), 2)
+		delta_x = m.raiz(delta, 2.0)
 		x1 = (-b + delta)/2*a
 		x2 = (-b - delta)/2*a
 		}
@@ -34,7 +39,7 @@ programa
 		funcao menu() 
 	{
 
-	        escreva("*********************************************\n")
+	     escreva("*********************************************\n")
 		escreva("*              MENU DAS FUNÇÕES             *\n")
 		escreva("*********************************************\n")
 		escreva("* 1 - Ver o valor de a, b e c ------------- *\n")
@@ -42,7 +47,9 @@ programa
 		escreva("* 3 - Ver o valor de delta ---------------- *\n")
 		escreva("* 4 - Ver o valor de x1 ------------------- *\n")
 		escreva("* 5 - Ver o valor de x2 ------------------- *\n")
+		escreva("* 0 - Sair -------------------------------- *\n")
 		escreva("*********************************************\n")
+		leia(opcao)
 	}
 
 }
