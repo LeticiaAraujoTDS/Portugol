@@ -3,21 +3,56 @@ programa
 	inclua biblioteca Util --> u
 	inclua biblioteca Matematica --> m
 	
-	real a, b, c, x, x1, x2, delta, delta_x, opcao
-	
-	
+	real a, b, c
+	inteiro opcao, delta
+
 	funcao inicio()
 	{
 	
 		escreva("Informe o valor de a : \n")
 		leia(a)
+		se(a == 0){
+			limpa()
+				escreva("O valor de a tem que ser diferente de 0 para que a função seja quadrática!")
+			enquanto(a == 0){
+				escreva("Informe o valor de a : \n")
+				leia(a)
+					}//fim enquanto a
+				}//fim se a
 		escreva("Informe o valor de b : \n")
 		leia(b)
 		escreva("Informe o valor de c : \n")
 		leia(c)
-		calcular_delta()
-		calcular_raiz()
 		
+		limpa()
+
+		menu()
+
+		opcao = 99
+
+		enquanto(opcao != 0){
+
+			escreva("\nQuer ver mais alguma coisa?")
+			leia(opcao)
+
+		escolha(opcao){
+
+
+			caso 0:
+			
+			escreva("Obrigado por usar nosso menu.")
+			
+			pare
+
+			caso 1:
+
+			escreva("Os valores são a = ", a, ", b = ", b, " e c = ", c,".")
+
+			pare
+
+			
+				}//fim escolha
+		}//fim enquanto
 
 		
 
@@ -26,15 +61,19 @@ programa
 
 	funcao calcular_delta()
 	{
-		delta = m.potencia(b, 2.0) - 4 * a * c
+		
+		delta = m.potencia(b, 2)-4*a*c
 		}
 		
 	funcao calcular_raiz()
 	{
-		delta_x = m.raiz(delta, 2.0)
-		x1 = (-b + delta)/2*a
-		x2 = (-b - delta)/2*a
+		real x1,x2
+		delta = m.raiz(m.potencia(b,2)+(-4*a*c),2)
+		x1 = (-(b)+delta)/2*a
+		x2 = (-(b)-delta)/2*a
 		}
+
+
 
 		funcao menu() 
 	{
